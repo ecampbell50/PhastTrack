@@ -163,7 +163,7 @@ python3 $working_dir/GenerateEdgetables.py --input Prophage_Sourmash_JI.csv --si
 # Move to the directory
 cd $working_dir/$output_dir/Edgetables
 
-python3 $working_dir/GetGPsAndNodes.py --input_prophage Prophage_Sourmash_JI.csv --input_genome Host_Sourmash_JI.csv
+python3 $working_dir/GetGPsAndNodes.py --prophage_input Prophage_Sourmash_JI.csv --genome_input Host_Sourmash_JI.csv
 
 echo "Final Edge and Node tables saved to $working/$output_dir/Edgetables"
 
