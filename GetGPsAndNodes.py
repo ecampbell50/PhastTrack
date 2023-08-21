@@ -121,7 +121,7 @@ df_GG_edited = df_GG.applymap(lambda x: x.replace('.fna', ''))
 df_PP_edited = df_PP.applymap(lambda x: x.replace('.fasta', ''))
 
 # Concatenate all 3 edgetables
-concatenated_df = pd.concat([df_GG, df_PP, df_GP], axis=0)
+concatenated_df = pd.concat([df_GG_edited, df_PP_edited, df_GP], axis=0)
 # Reset the index just in-caseys
 concatenated_df.reset_index(drop=True, inplace=True)
 
