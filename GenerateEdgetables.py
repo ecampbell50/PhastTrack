@@ -62,7 +62,7 @@ def smashpass_edgetable(smash_csv, SIM, con_type):
         final_df = filtered_df[filtered_df['Genome1'] != filtered_df['Genome2']]
 
         # Change all similarity values to the connection type
-        final_df.loc[:, 'Value'] = con_type
+        # final_df.loc[:, 'Value'] = con_type
 
 
         # Convert the df to a csv
